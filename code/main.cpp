@@ -8,12 +8,6 @@
 
 using namespace std;
 
-void met(int a, ...)
-{
-	va_list list;
-	va_start(list,a);
-	
-}
 
 void printarr(int* a,int length)
 {
@@ -38,11 +32,6 @@ void elapsed_print(long begin,long end)
 {
 	double elapsedMs = double(end-begin) * 1000.0/CLOCKS_PER_SEC;
 	cout<<"Elpsed time: "<<elapsedMs<<" ms"<<endl;
-}
-
-int F(const void* l, const void* r)
-{
-	return (*(int*)l - *(int*)r);
 }
 
 int main(int argc,char** argv)
